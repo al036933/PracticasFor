@@ -9,9 +9,9 @@ public class Main {
             partido = (int) (Math.round(Math.random() * 2));
 
             if (partido == 0) {
-                System.out.println("Partido " + i + ": X" );
+                System.out.println("Partido 1: X");
             } else {
-                System.out.println("Partido : " + partido);
+                System.out.println("Partido 1 : " + partido);
 
             }
         }
