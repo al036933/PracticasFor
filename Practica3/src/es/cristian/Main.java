@@ -12,11 +12,14 @@ public class Main {
         System.out.print("Escribe un número para comprobar si es primo: ");
         numero = entrada.nextInt();
 
-        for (int i = 2; i < numero; i++) {
+        for (int i = 1; i <= numero; i++) {
 
+            if (numero % i == 0) {
+                numeroDeDivisores ++;
+            }
         }
 
-        if (numeroDeDivisores == 0) {
+        if (numeroDeDivisores == 2) {
             System.out.println("El número " + numero + " es primo");
         } else {
             System.out.println("El número " + numero + " no es primo");
